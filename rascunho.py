@@ -34,7 +34,7 @@ for ativo in tabela['ATIVO']:
     roic = nav.find_element_by_xpath(
         '/html/body/div[2]/div[3]/div[5]/div/div/div/div[2]/div/span[2]').text.replace(',', '.').replace('%', ' ').strip()
     if roic == '-':
-        roic = float('0')
+        roic = float('10')
     else:
         roic = float(roic)/100
 
